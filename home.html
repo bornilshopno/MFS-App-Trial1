@@ -40,7 +40,7 @@
 
                         </div>
                         <!-- add money form section -->
-                        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl formss" id="add-money-form">
                             <form class="card-body">
                                 <div class="form-control">
                                     <label class="label">
@@ -59,6 +59,29 @@
                                 </div>
                                 <div class="form-control mt-6">
                                     <button id="add-amount-btn" class="btn btn-primary">Confirm to Add</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- cash out form section  -->
+                        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl formss" id="cash-out-form">
+                            <form class="card-body">
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">Withdraw Amount</span>
+                                    </label>
+                                    <input type="text" placeholder="Amount" id="cashout-amount" class="input input-bordered"
+                                        required />
+                                </div>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">Pin Number</span>
+                                    </label>
+                                    <input type="password" id="cashout-pin" placeholder="Your Pin"
+                                        class="input input-bordered" required />
+
+                                </div>
+                                <div class="form-control mt-6">
+                                    <button id="cash-out-btn" class="btn btn-primary">Confirm CashOut</button>
                                 </div>
                             </form>
                         </div>
