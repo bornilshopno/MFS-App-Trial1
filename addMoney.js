@@ -17,7 +17,12 @@ document.getElementById("add-amount-btn").addEventListener('click',function(even
     p.innerText= `Added Money $ ${addMoneyNumber} and updated account balance is ${newBalance}`;
     document.getElementById('transection-container').appendChild(p);
       }
+
+      else {
+        alert("failed due to wrong Number or Pin")
       }
+      }
+      
 )
 
 // cashout/ cashout btn function
@@ -38,6 +43,9 @@ document.getElementById("cash-out-btn").addEventListener('click',function(event)
     p.innerText= `Cashed Out $ ${cashoutMoneyNumber} and updated account balance is ${newBalance}`;
     document.getElementById('transection-container').appendChild(p);
       }
+      else {
+        alert("failed due to wrong input in Number or Pin")
+      }
 
 })
 
@@ -57,6 +65,9 @@ const billPayMoney=document.getElementById('payBill-amount').value;
     const p=document.createElement('p');
     p.innerText= `Bill paid: $ ${billPayMoneyNumber} and updated account balance is ${newBalance}`;
     document.getElementById('transection-container').appendChild(p);
+      }
+      else {
+        alert("failed due to wrong input in Number or Pin")
       }
 
 

@@ -6,5 +6,7 @@ document.getElementById('login-btn').addEventListener('click', function(event){
       window.location.href= "./home.html"
         
     }
-    else {console.log('invalid credential')}
+    else {
+      alert("failed due to wrong credentials ie- Number or Pin")
+    }
 })
